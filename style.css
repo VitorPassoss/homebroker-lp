@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+html body {
+  overflow-x: hidden;
+}
+html body header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff914d;
+  font-size: 2rem;
+  height: 6rem;
+  width: 100vw;
+  padding: 0 6rem;
+  position: sticky;
+  top: 0;
+  border-bottom: #f4bf6f 0.2rem solid;
+  z-index: 1;
+}
+html body header h1 figure a {
+  text-decoration: none;
+  color: #ffffff;
+}
+html body header nav ul {
+  display: flex;
+  list-style: none;
+  display: flex;
+  list-style: none;
+}
+html body header nav ul li {
+  padding: 2.5rem;
+}
+html body header nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+}
+html body header nav ul li a:after {
+  content: "";
+  position: absolute;
+  top: 2.7rem;
+  left: 50%;
+  width: 0;
+  height: 0.3rem;
+  background-color: #f4bf6f;
+  transition: all 300ms ease-in-out;
+}
+html body header nav ul li a:hover::after {
+  width: 50%;
+  left: 25%;
+}
+html body main .front-page {
+  height: 100vh;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(126, 96, 60, 0.7)), url(./img/fundo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+}
+html body main .front-page .first-page {
+  margin: 6rem 3rem 0 10rem;
+  color: #ffffff;
+}
+html body main .front-page .first-page h1 {
+  font-size: 3.6rem;
+  margin-top: 30rem;
+  margin-bottom: 1rem;
+  width: 60rem;
+  font-weight: bolder;
+}
+html body main .front-page .first-page h2 {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+}
+html body main .front-page .register {
+  display: flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+html body main .front-page .register .form {
+  width: 35rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 2.4rem;
+  border-radius: 2rem;
+  line-height: 4rem;
+  margin: 12rem 35rem 0 2rem;
+}
+html body main .front-page .register .form fieldset {
+  border: none;
+  font-size: 1.5rem;
+  background-color: #fff;
+}
+html body main .front-page .register .form fieldset .input-data {
+  height: 4rem;
+  width: 100%;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+html body main .front-page .register .form fieldset .input-data input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 1.7rem;
+  border-bottom: 0.2rem solid silver;
+  outline: none;
+}
+html body main .front-page .register .form fieldset .input-data input:focus ~ label,
+html body main .front-page .register .form fieldset .input-data input:valid ~ label {
+  transform: translateY(-2rem);
+  font-size: 1.5rem;
+  border-color: transparent;
+}
+html body main .front-page .register .form fieldset .input-data label {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0;
+  color: gray;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+html body main .front-page .register .form fieldset .input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 0.2rem;
+  width: 100%;
+}
+html body main .front-page .register .form fieldset .input-data .underline:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #ff914d;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+html body main .front-page .register .form fieldset .input-data input:focus ~ .underline:before,
+html body main .front-page .register .form fieldset .input-data input:valid ~ .underline:before {
+  transform: scaleX(1);
+}
+html body main .front-page .register .form fieldset h4 {
+  color: #ff914d;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 2.2rem;
+}
+html body main .front-page .register .form fieldset button {
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: none;
+  width: 30rem;
+}
+html body main .front-page .register .form fieldset button:active {
+  background-color: #ff914d;
+}
+html body main .main-content {
+  height: 100vh;
+  font-size: 2.4rem;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  background-color: rgba(252, 251, 249, 0.8941176471);
+}
+html body main .main-content article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 8rem;
+}
+html body main .main-content article h1 {
+  color: #ff914d;
+  margin-bottom: 2rem;
+}
+html body main .main-content article p {
+  line-height: 3rem;
+  margin-bottom: 2rem;
+}
+html body main .main-content article a {
+  text-decoration: none;
+  color: #ff914d;
+  font-weight: bold;
+}
+html body main .main-content .strong p {
+  font-weight: bold;
+}
+html body main .main-content figure {
+  display: flex;
+  align-items: center;
+}
+html body main .main-content figure img {
+  border-radius: 2rem;
+}
+html body main .account {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+}
+html body main .customer {
+  height: 100vh;
+  font-size: 2.4rem;
+  background-color: background-color;
+  display: flex;
+  flex-direction: column;
+}
+html body main .customer h1 {
+  color: #ff914d;
+  margin: 12rem 0 5rem 8rem;
+}
+html body main .customer .center {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+html body main .customer .center .depo {
+  border-radius: 3rem;
+  border: #ff914d 0.3rem solid;
+  padding: 2.4rem;
+  height: 36rem;
+  width: 40rem;
+  font-style: italic;
+}
+html body main .customer .center .depo p {
+  margin-bottom: 2rem;
+}
+html body main .customer .center .depo img {
+  border-radius: 4rem;
+}
+html body main .customer .center .depo span {
+  font-size: 2.1rem;
+}
+html body main .customer .center .depo:hover {
+  transform: scale(1.02);
+  transition: all 400ms ease-in-out;
+}
+html body main .contat {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+}
+html body main .contat .text p {
+  font-size: 2rem;
+}
+html body main .contat .icon {
+  margin-top: 2rem;
+}
+html body main .contat .icon a img {
+  border-radius: 0.8rem;
+}
+html body main .contat .form {
+  display: flex;
+  align-items: center;
+  width: 80rem;
+}
+html body main .contat .form fieldset {
+  border: none;
+  font-size: 1.5rem;
+  margin-left: 37rem;
+}
+html body main .contat .form fieldset .input-data {
+  height: 4rem;
+  width: 100%;
+  position: relative;
+  margin-bottom: 3.3rem;
+}
+html body main .contat .form fieldset .input-data input,
+html body main .contat .form fieldset .input-data textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  font-size: 1.7rem;
+  border-bottom: 0.2rem solid silver;
+  outline: none;
+}
+html body main .contat .form fieldset .input-data input:focus ~ label,
+html body main .contat .form fieldset .input-data input:valid ~ label,
+html body main .contat .form fieldset .input-data textarea:focus ~ label,
+html body main .contat .form fieldset .input-data textarea:valid ~ label {
+  transform: translateY(-3.5rem);
+  font-size: 1.5rem;
+  border-color: transparent;
+}
+html body main .contat .form fieldset .input-data label {
+  position: absolute;
+  bottom: 1.3rem;
+  left: 0;
+  color: gray;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+html body main .contat .form fieldset .input-data .underline {
+  position: absolute;
+  bottom: 0;
+  height: 0.2rem;
+  width: 100%;
+}
+html body main .contat .form fieldset .input-data .underline:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background: #ff914d;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+html body main .contat .form fieldset .input-data input:focus ~ .underline:before,
+html body main .contat .form fieldset .input-data input:valid ~ .underline:before,
+html body main .contat .form fieldset .input-data textarea:focus ~ .underline:before,
+html body main .contat .form fieldset .input-data textarea:valid ~ .underline:before {
+  transform: scaleX(1);
+}
+html body main .contat .form fieldset button {
+  border-radius: 2rem;
+  cursor: pointer;
+  padding: 1rem;
+  margin-top: 1rem;
+  border: none;
+  width: 30rem;
+}
+html body main .contat .form fieldset button:active {
+  background-color: #ff914d;
+}
+html body footer .footer {
+  display: flex;
+  height: 6rem;
+  background-color: #ff914d;
+  justify-content: center;
+  align-items: center;
+}
+html body footer .footer figure img {
+  border-radius: 0.4rem;
+  margin-right: 4rem;
+}
+html body footer .footer p {
+  color: #ffffff;
+  font-size: 1.6rem;
+}/*# sourceMappingURL=style.css.map */
