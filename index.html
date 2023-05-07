@@ -9,12 +9,13 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <h1>
         <a href="#home"><img src="./src/img/logo.png" alt="Logo" /></a>
       </h1>
-      <nav>
-        <ul>
+      <nav id="nav">
+        <button id="mobile">Menu</button>
+        <ul id="menu">
           <li><a href="#about">Sobre a F4 Bank</a></li>
           <li><a href="#account">Conta Corrente</a></li>
           <li><a href="#credit-card">Cartões</a></li>
@@ -47,26 +48,24 @@
             para nossos clientes.
           </p>
           <p>
-            Aqui, acreditamos que a tecnologia pode transformar a maneira como
-            as pessoas lidam com seu dinheiro. Por isso, criamos uma plataforma
-            digital que permite a você controlar suas finanças de forma fácil,
-            rápida e segura.
+            Criamos uma plataforma digital que permite a você controlar suas
+            finanças de forma fácil, rápida e segura.
           </p>
           <p>
-            Seja para pagar contas, fazer transferências, investir seu dinheiro
-            ou simplesmente controlar seus gastos, estamos aqui para ajudar você
-            a alcançar seus objetivos financeiros. Venha ser parte dessa
-            revolução bancária digital!
+            Seja para pagar contas, fazer transferências ou simplesmente
+            controlar seus gastos, estamos aqui para ajudar você a alcançar seus
+            objetivos financeiros. Venha ser parte dessa revolução bancária
+            digital!
           </p>
         </article>
-        <!-- <span
+        <span
           ><img
             src="./src/img/sobre.jpg"
             alt="Homem escrevendo em frente a um computador"
-        /></span> -->
+        /></span>
       </section>
 
-      <!-- <section id="account" class="main-content account">
+      <section id="account" class="main-content account">
         <span>
           <img
             src="./src/img/digital.jpg"
@@ -165,10 +164,9 @@
           <p>
             Se você tiver alguma dúvida, sugestão ou precisar de ajuda, nossa
             equipe está pronta para atendê-lo(a). Nosso objetivo é proporcionar
-            a melhor experiência bancária digital possível, e isso inclui um
-            suporte ao cliente de qualidade. Estamos disponíveis para
-            ajudá-lo(a) de segunda a sexta, das 8h às 20h, e aos sábados, das 9h
-            às 14h.
+            a melhor experiência bancária digital possível. Estamos disponíveis
+            para ajudá-lo(a) de segunda a sexta, das 8h às 20h, e aos sábados,
+            das 9h às 14h.
           </p>
           <div class="icon">
             <a href="https://www.instagram.com/" target="_blank"
@@ -183,7 +181,7 @@
           </div>
         </article>
 
-        <form onsubmit="limparCampo()" class="form">
+        <form onsubmit="limparCampo(event)" class="form">
           <fieldset>
             <div class="input-data">
               <input type="text" id="nome" class="input" required />
@@ -229,6 +227,6 @@
       </div>
     </footer>
 
-    <script src="./src/script/script.js"></script> -->
+    <script src="./src/script/script.js"></script>
   </body>
 </html>
