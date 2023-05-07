@@ -11,4 +11,4 @@ SASS 💄
 CSS 🎨
 JavaScript 🚀
 
-<img src="https://i.ibb.co/c65W182/127-0-0-1-5501-index-html.png"/>
+<img src="https://i.ibb.co/f9jpN36/127-0-0-1-5501.png"/>
