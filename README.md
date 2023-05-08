@@ -11,4 +11,12 @@ SASS 💄
 CSS 🎨
 JavaScript 🚀
 
+Disponível em http://beatriz-f4-bank.surge.sh/
+
+# Versão Desktop
+
 <img src="https://i.ibb.co/3Y3z9K5/127-0-0-1-5501-1.png"/>
+
+# Versão Mobile
+
+<img src="https://i.ibb.co/HB4rpgM/127-0-0-1-5501-4.png"/>
