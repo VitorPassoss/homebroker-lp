@@ -15,7 +15,7 @@ Disponível em http://beatriz-f4-bank.surge.sh/
 
 # Versão Desktop
 
-<img src="https://i.ibb.co/3Y3z9K5/127-0-0-1-5501-1.png"/>
+<img src="https://i.ibb.co/Q9Qw5n1/127-0-0-1-5501-5.png"/>
 
 # Versão Mobile
 
