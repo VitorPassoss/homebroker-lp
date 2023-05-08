@@ -14,11 +14,23 @@ const limparCampo = (event) => {
   messege.innerHTML = `Entraremos em contato através do endereço: ${sendEmail}`;
 };
 
-// const btnMobile = document.getElementById("#mobile");
+//botão mobile
+const btnMobile = document.getElementById("mobile");
 
-// function changeMenu() {
-//   const nav = document.getElementById("#nav");
-//   nav.classList.toggle("active");
-// }
+function changeMenu(event) {
+  if (event.type === "touchstart") {
+    event.preventDefault();
+  }
+  const nav = document.getElementById("nav");
+  nav.classList.toggle("active");
+  const active = nav.classList.contains("active");
+  event.currentTarget.setAttribute("aria-expanded", active);
+  if (active) {
+    event.currentTarget.setAttribute("aria-label", "Fechar Menu");
+  } else {
+    event.currentTarget.setAttribute("aria-label", "Abrir Menu");
+  }
+}
 
-// btnMobile.addEventListener("click", changeMenu());
+btnMobile.addEventListener("click", changeMenu);
+btnMobile.addEventListener("touchstart", changeMenu);
