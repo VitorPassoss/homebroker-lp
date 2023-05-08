@@ -90,6 +90,12 @@ html body main .front-page .first-page h2 {
   align-items: center;
   font-weight: 400;
 }
+html body main #about article h1 {
+  font-size: 2.4rem;
+}
+html body main #about article p {
+  font-size: 2rem;
+}
 html body main .main-content {
   height: 100vh;
   font-size: 2.2rem;
@@ -101,8 +107,8 @@ html body main .main-content article {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin: 6rem;
-  margin-top: 12rem;
 }
 html body main .main-content article h1 {
   color: #ff914d;
@@ -127,6 +133,7 @@ html body main .main-content span {
 }
 html body main .main-content span img {
   border-radius: 2rem;
+  width: 58rem;
 }
 html body main .account {
   display: grid;
@@ -175,38 +182,38 @@ html body main .customer .center .depo:hover {
   transform: scale(1.05);
   transition: all 400ms ease-in-out;
 }
-html body main .contat {
+html body main .contact {
   display: grid;
   grid-template-columns: 1fr 1.3fr;
 }
-html body main .contat .text p {
+html body main .contact .text p {
   font-size: 2rem;
 }
-html body main .contat .icon {
+html body main .contact .icon {
   margin-top: 2rem;
+  margin-right: 43rem;
 }
-html body main .contat .icon a img {
+html body main .contact .icon a img {
   border-radius: 0.8rem;
 }
-html body main .contat .form {
+html body main .contact .form {
   display: flex;
   align-items: center;
-  width: 80rem;
   margin-top: 5rem;
 }
-html body main .contat .form fieldset {
+html body main .contact .form fieldset {
   border: none;
   font-size: 1.5rem;
   margin-left: 37rem;
 }
-html body main .contat .form fieldset .input-data {
+html body main .contact .form fieldset .input-data {
   height: 4rem;
   width: 100%;
   position: relative;
   margin-bottom: 3.3rem;
 }
-html body main .contat .form fieldset .input-data input,
-html body main .contat .form fieldset .input-data textarea {
+html body main .contact .form fieldset .input-data input,
+html body main .contact .form fieldset .input-data textarea {
   height: 100%;
   width: 100%;
   border: none;
@@ -214,15 +221,15 @@ html body main .contat .form fieldset .input-data textarea {
   border-bottom: 0.2rem solid silver;
   outline: none;
 }
-html body main .contat .form fieldset .input-data input:focus ~ label,
-html body main .contat .form fieldset .input-data input:valid ~ label,
-html body main .contat .form fieldset .input-data textarea:focus ~ label,
-html body main .contat .form fieldset .input-data textarea:valid ~ label {
+html body main .contact .form fieldset .input-data input:focus ~ label,
+html body main .contact .form fieldset .input-data input:valid ~ label,
+html body main .contact .form fieldset .input-data textarea:focus ~ label,
+html body main .contact .form fieldset .input-data textarea:valid ~ label {
   transform: translateY(-3rem);
   font-size: 1.5rem;
   border-color: transparent;
 }
-html body main .contat .form fieldset .input-data label {
+html body main .contact .form fieldset .input-data label {
   position: absolute;
   bottom: 1.3rem;
   left: 0;
@@ -230,13 +237,13 @@ html body main .contat .form fieldset .input-data label {
   pointer-events: none;
   transition: all 0.3s ease;
 }
-html body main .contat .form fieldset .input-data .underline {
+html body main .contact .form fieldset .input-data .underline {
   position: absolute;
   bottom: 0;
   height: 0.2rem;
   width: 100%;
 }
-html body main .contat .form fieldset .input-data .underline:before {
+html body main .contact .form fieldset .input-data .underline:before {
   position: absolute;
   content: "";
   height: 100%;
@@ -245,13 +252,13 @@ html body main .contat .form fieldset .input-data .underline:before {
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
-html body main .contat .form fieldset .input-data input:focus ~ .underline:before,
-html body main .contat .form fieldset .input-data input:valid ~ .underline:before,
-html body main .contat .form fieldset .input-data textarea:focus ~ .underline:before,
-html body main .contat .form fieldset .input-data textarea:valid ~ .underline:before {
+html body main .contact .form fieldset .input-data input:focus ~ .underline:before,
+html body main .contact .form fieldset .input-data input:valid ~ .underline:before,
+html body main .contact .form fieldset .input-data textarea:focus ~ .underline:before,
+html body main .contact .form fieldset .input-data textarea:valid ~ .underline:before {
   transform: scaleX(1);
 }
-html body main .contat .form fieldset button {
+html body main .contact .form fieldset button {
   border-radius: 2rem;
   cursor: pointer;
   padding: 1rem;
@@ -262,10 +269,10 @@ html body main .contat .form fieldset button {
   font-size: 1.8rem;
   font-weight: 500;
 }
-html body main .contat .form fieldset button:active {
+html body main .contact .form fieldset button:active {
   transform: scale(1.1);
 }
-html body main .contat .form fieldset .sent {
+html body main .contact .form fieldset .sent {
   margin: 2rem 0 0 0;
   color: green;
 }
@@ -284,18 +291,270 @@ html body footer .footer p {
   color: #ffffff;
   font-size: 1.6rem;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 1200px) and (min-width: 900px) {
+  html body main .front-page .first-page {
+    display: flex;
+    margin-left: 1rem;
+  }
+  html body main .front-page .first-page h1 {
+    font-size: 2.5rem;
+    margin-top: 20rem;
+  }
+  html body main .front-page .first-page h2 {
+    margin-top: 22rem;
+    margin-left: -27rem;
+    font-size: 1.8rem;
+    word-break: break-word;
+    max-width: 100%;
+  }
+  html body main .main-content {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  html body main .main-content article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem;
+    text-align: justify;
+  }
+  html body main .main-content article h1 {
+    font-size: 2.6rem;
+  }
+  html body main .main-content article p {
+    font-size: 1.9rem;
+    margin-bottom: 1.5rem;
+  }
+  html body main .main-content span {
+    display: flex;
+    justify-content: center;
+  }
+  html body main .main-content span img {
+    width: 40rem;
+  }
+  html body main #about {
+    background-image: linear-gradient(rgba(126, 96, 60, 0.7), rgba(0, 0, 0, 0.3)), url(../img/sobre.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  html body main #about article {
+    padding-top: 5rem;
+    color: #ffffff;
+  }
+  html body main #about span img {
+    width: 0rem;
+  }
+  html body main #credit-card {
+    background-color: rgb(243, 243, 243);
+  }
+  html body main #credit-card article {
+    padding-top: 18rem;
+    height: 22rem;
+  }
+  html body main #clients h1 {
+    font-size: 2.4rem;
+    margin: 7rem 0 0 2.5rem;
+  }
+  html body main #clients .center .depo {
+    width: 25rem;
+    height: 38rem;
+    margin-left: 2.1rem;
+    margin-bottom: 2.5rem;
+  }
+  html body main #clients .center .depo p {
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+  html body main #clients .center .depo .user span {
+    font-size: 1.5rem;
+  }
+  html body footer .footer {
+    padding: 0 1rem;
+    height: 6rem;
+  }
+  html body footer .footer p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 900px) and (min-width: 724px) {
   html body {
     width: 100vw;
+  }
+  html body header h1 {
+    margin-left: -5rem;
+    padding-top: 1rem;
+  }
+  html body header nav {
+    margin-right: -3.5rem;
+  }
+  html body header nav button {
+    border: none;
+    background-color: #ff914d;
+    font-size: 2.5rem;
+    color: white;
   }
   html body header nav #mobile {
     display: block;
   }
   html body header nav #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 6rem;
+    right: 0;
+    background: #ff914d;
+    height: 0;
+    transition: 0.6s;
+    z-index: 10;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  html body header nav #menu li a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 0.2rem solid rgba(0, 0, 0, 0.05);
+  }
+  html body header nav #menu li a:after {
     display: none;
   }
   html body header #nav.active #menu {
+    height: calc(100vh - 6rem);
+    display: block;
+    visibility: visible;
+  }
+  html body main .front-page .first-page {
     display: flex;
+    margin-left: 1rem;
+  }
+  html body main .front-page .first-page h1 {
+    font-size: 2.2rem;
+    margin-top: 22rem;
+  }
+  html body main .front-page .first-page h2 {
+    margin-top: 22rem;
+    margin-left: -27rem;
+    font-size: 1.8rem;
+    word-break: break-word;
+    max-width: 100%;
+  }
+  html body main .main-content {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  html body main .main-content article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem;
+    text-align: justify;
+  }
+  html body main .main-content article h1 {
+    font-size: 2.4rem;
+  }
+  html body main .main-content article p {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  html body main .main-content span {
+    display: flex;
+    justify-content: center;
+  }
+  html body main .main-content span img {
+    width: 40rem;
+  }
+  html body main #about {
+    background-image: linear-gradient(rgba(126, 96, 60, 0.7), rgba(0, 0, 0, 0.3)), url(../img/sobre.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  html body main #about article {
+    padding-top: 5rem;
+    color: #ffffff;
+  }
+  html body main #about span img {
+    width: 0rem;
+  }
+  html body main #credit-card {
+    background-color: rgb(243, 243, 243);
+  }
+  html body main #credit-card article {
+    padding-top: 5rem;
+    height: 22rem;
+  }
+  html body main #clients h1 {
+    font-size: 2.4rem;
+    margin: 7rem 0 0 12rem;
+  }
+  html body main #clients .center .depo {
+    width: 24rem;
+    height: 23rem;
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+  }
+  html body main #clients .center .depo p {
+    font-size: 1.2rem;
+    text-align: justify;
+  }
+  html body main #clients .center .depo .user span {
+    font-size: 1rem;
+  }
+  html body footer .footer {
+    padding: 0 1rem;
+    height: 6rem;
+  }
+  html body footer .footer p {
+    font-size: 1.3rem;
+  }
+}
+@media screen and (max-width: 724px) {
+  html body {
+    width: 100vw;
+  }
+  html body header h1 {
+    margin-left: -5rem;
+    padding-top: 1rem;
+  }
+  html body header nav {
+    margin-right: -3.5rem;
+  }
+  html body header nav button {
+    border: none;
+    background-color: #ff914d;
+    font-size: 2.5rem;
+    color: white;
+  }
+  html body header nav #mobile {
+    display: block;
+  }
+  html body header nav #menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 6rem;
+    right: 0;
+    background: #ff914d;
+    height: 0;
+    transition: 0.6s;
+    z-index: 10;
+    visibility: hidden;
+    overflow-y: hidden;
+  }
+  html body header nav #menu li a {
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 0.2rem solid rgba(0, 0, 0, 0.05);
+  }
+  html body header nav #menu li a:after {
+    display: none;
+  }
+  html body header #nav.active #menu {
+    height: calc(100vh - 6rem);
+    display: block;
+    visibility: visible;
   }
   html body main .front-page .first-page {
     display: flex;
@@ -314,30 +573,99 @@ html body footer .footer p {
     max-width: 100%;
   }
   html body main .main-content {
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr;
-    background-image: linear-gradient(rgba(117, 87, 54, 0.7), rgba(61, 58, 55, 0.8)), url(../img/sobre.jpg);
+  }
+  html body main .main-content article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2rem;
+    text-align: justify;
+  }
+  html body main .main-content article h1 {
+    font-size: 2.4rem;
+  }
+  html body main .main-content article p {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+  }
+  html body main .main-content span img {
+    width: 25rem;
+  }
+  html body main #about {
+    background-image: linear-gradient(rgba(126, 96, 60, 0.7), rgba(0, 0, 0, 0.3)), url(../img/sobre.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
-  html body main .main-content article {
-    padding-top: 10rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 2rem 0 2rem;
-    text-align: justify;
+  html body main #about article {
+    padding-top: 5rem;
     color: #ffffff;
   }
-  html body main .main-content article h1 {
-    font-size: 2rem;
+  html body main #about article p {
+    font-size: 1.4rem;
   }
-  html body main .main-content article p {
+  html body main #about span img {
+    width: 0rem;
+  }
+  html body main #credit-card {
+    background-color: rgb(243, 243, 243);
+  }
+  html body main #credit-card article {
+    padding-top: 18rem;
+    height: 22rem;
+  }
+  html body main #clients h1 {
+    font-size: 2.4rem;
+    margin: 7rem 0 5rem 2.5rem;
+  }
+  html body main #clients .center {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  html body main #clients .center .depo {
+    width: 33rem;
+    height: 29rem;
+    margin-left: 2.1rem;
+    margin-bottom: 2.5rem;
+  }
+  html body main #clients .center .depo p {
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+  html body main #clients .center .depo .user span {
     font-size: 1.5rem;
-    margin-bottom: 0.5rem;
   }
-  html body main .main-content span img {
-    width: 0;
+  html body main #clients .center .depo:nth-child(2) {
+    height: 26.8rem;
+  }
+  html body main #clients .center .depo:nth-child(3) {
+    height: 30.5rem;
+  }
+  html body main #contact {
+    padding-top: 54rem;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  html body main #contact article {
+    width: 33rem;
+  }
+  html body main #contact article .icon {
+    width: 100%;
+    margin-top: 0;
+  }
+  html body main #contact .form {
+    width: 33rem;
+    margin-left: -35rem;
+  }
+  html body footer .footer {
+    margin-top: 62rem;
+    padding: 0 1rem;
+    height: 6rem;
+  }
+  html body footer .footer p {
+    font-size: 1.3rem;
   }
 }/*# sourceMappingURL=style.css.map */
