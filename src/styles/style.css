@@ -71,12 +71,12 @@ html body main .front-page {
   display: flex;
 }
 html body main .front-page .first-page {
-  margin: 6rem 70rem 0 7rem;
+  margin: 0rem 40rem 0 7rem;
   color: #ffffff;
 }
 html body main .front-page .first-page h1 {
   font-size: 3.6rem;
-  margin-top: 30rem;
+  margin-top: 20rem;
   margin-bottom: 2rem;
   width: 60rem;
   font-weight: 600;
@@ -682,3 +682,90 @@ html body footer .footer p {
     font-size: 1.3rem;
   }
 }/*# sourceMappingURL=style.css.map */
+
+
+
+.img-logo {
+  width: 68px; height: 68px;
+
+
+}
+
+
+.front-page .btn {
+  border-radius: 2rem;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 500;
+    height: 40px;
+    padding: 10px 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.descss {
+  display: none;
+}
+
+@media screen and (max-width: 501px) {
+  .img-logo {
+    width: 48px; height: 48px;
+  
+  }
+
+  .btn {
+    border-radius: 2rem;
+    cursor: pointer;
+    border: none;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 500;
+    height: 40px;
+    padding: 10px 30px;
+    margin-top: 15px;
+    margin-left: 30px;
+    border-radius: 5px;
+  }
+
+
+  html body main .front-page .first-page {
+    margin: 0rem 40rem 0 2rem;
+    color: #ffffff;
+  }
+  html body main .front-page .first-page h1 {
+    font-size: 3rem;
+    margin-top: 20rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    width: 350px;
+  }
+
+  .first-page {
+    display: flex;
+    flex-direction: column !important;
+  }
+
+  .front-page .first-page h2 {
+      display: none !important;
+  }
+
+  .descss {
+    display: initial;
+    margin-top: 10px ;
+    font-weight: 600;
+    font-size: 13px;
+  }
+
+
+  .btns {
+    .btn {
+      margin-left: 0px;
+
+    }
+  }
+  
+}
