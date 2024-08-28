@@ -64,15 +64,19 @@ html body header nav #mobile {
 html body main .front-page {
   height: 100vh;
   width: 100vw;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(126, 96, 60, 0.7)), url(../img/fundo.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.745), rgba(73, 58, 38, 0.7)), url(../img/fundo.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   display: flex;
 }
+
+
 html body main .front-page .first-page {
   margin: 0rem 40rem 0 7rem;
   color: #ffffff;
+  filter: brightness(100%) !important;
+
 }
 html body main .front-page .first-page h1 {
   font-size: 3.6rem;
@@ -89,6 +93,7 @@ html body main .front-page .first-page h2 {
   font-size: 2rem;
   align-items: center;
   font-weight: 400;
+  margin-top: 20px;
 }
 html body main #about article h1 {
   font-size: 2.4rem;
@@ -137,9 +142,8 @@ html body main .main-content span img {
 }
 html body main .account {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  padding-top: 5.5rem;
 }
+
 html body main .customer {
   height: 100vh;
   font-size: 2.4rem;
@@ -304,6 +308,12 @@ html body footer .footer p {
   color: #ffffff;
   font-size: 1.6rem;
 }
+
+.descss {
+  display: none;
+
+}
+
 @media screen and (max-width: 1200px) and (min-width: 900px) {
   html body main .front-page .first-page {
     display: flex;
@@ -536,7 +546,7 @@ html body footer .footer p {
   }
   html body header nav button {
     border: none;
-    background-color: #ff914d;
+    background-color: black;
     font-size: 2.5rem;
     color: white;
   }
@@ -586,16 +596,16 @@ html body footer .footer p {
     max-width: 100%;
   }
   html body main .main-content {
-    height: 100vh;
+    height: 100%;
     display: grid;
     grid-template-columns: 1fr;
+    padding: 5% 0%;
   }
   html body main .main-content article {
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 2rem;
-    text-align: justify;
   }
   html body main .main-content article h1 {
     font-size: 2.4rem;
@@ -608,17 +618,33 @@ html body footer .footer p {
     width: 25rem;
   }
   html body main #about {
-    background-image: linear-gradient(rgba(126, 96, 60, 0.7), rgba(0, 0, 0, 0.3)), url(../img/sobre.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 15px;
   }
   html body main #about article {
-    padding-top: 5rem;
-    color: #ffffff;
+    color: #000;
   }
   html body main #about article p {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+  }
+  html body main #about article h1 {
+    font-size: 2.8rem;
+  }
+
+  html body main #account  {
+    margin-top: 15px;
+  }
+
+  html body main #account article h1 {
+    font-size: 2.8rem;
+    margin-top: 15px;
+  }
+
+  .title {
+    font-size: 2.8rem !important;
+    margin-top: 15px !important;
   }
   html body main #about span img {
     width: 0rem;
@@ -627,12 +653,15 @@ html body footer .footer p {
     background-color: rgb(243, 243, 243);
   }
   html body main #credit-card article {
-    padding-top: 18rem;
-    height: 22rem;
+    height: 60rem;
   }
+
+ .vsf {
+  display: none !important;
+ }
   html body main #clients h1 {
     font-size: 2.4rem;
-    margin: 7rem 0 5rem 2.5rem;
+    margin: 2rem 0 5rem 2.5rem;
   }
   html body main #clients .center {
     display: grid;
@@ -640,7 +669,7 @@ html body footer .footer p {
   }
   html body main #clients .center .depo {
     width: 33rem;
-    height: 29rem;
+    max-height: 280px;
     margin-left: 2.1rem;
     margin-bottom: 2.5rem;
   }
@@ -658,7 +687,7 @@ html body footer .footer p {
     height: 30.5rem;
   }
   html body main #contact {
-    padding-top: 54rem;
+    padding-top: 0rem;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -670,12 +699,13 @@ html body footer .footer p {
     margin-top: 0;
   }
   html body main #contact .form {
-    width: 33rem;
-    margin-left: -35rem;
+    width: 100vw;
+    margin-left: -33rem;
+    margin-top: 0px !important;
   }
   html body footer .footer {
-    margin-top: 62rem;
-    padding: 0 1rem;
+    margin-top: 0rem;
+    padding: 6rem 2rem;
     height: 6rem;
   }
   html body footer .footer p {
@@ -706,16 +736,34 @@ html body footer .footer p {
     border-radius: 5px;
 }
 
-.descss {
-  display: none;
-}
+
 
 @media screen and (max-width: 501px) {
   .img-logo {
-    width: 48px; height: 48px;
+    width: 68px; height: 58px;
   
   }
 
+  html body header {
+    height: 6rem;
+  }
+
+
+  #about span {
+    display: none !important;
+  }
+
+  #account  .cu   {
+    width: 100% !important;
+    transform: scale(1.3);
+    margin-bottom: 15%;
+  }
+
+
+  
+ 
+
+  
   .btn {
     border-radius: 2rem;
     cursor: pointer;
@@ -737,8 +785,8 @@ html body footer .footer p {
     color: #ffffff;
   }
   html body main .front-page .first-page h1 {
-    font-size: 3rem;
-    margin-top: 20rem;
+    font-size: 4rem;
+    margin-top: 15rem;
     margin-bottom: 2rem;
     font-weight: 600;
     width: 350px;
@@ -749,15 +797,18 @@ html body footer .footer p {
     flex-direction: column !important;
   }
 
+
+
+
   .front-page .first-page h2 {
       display: none !important;
   }
 
   .descss {
     display: initial;
-    margin-top: 10px ;
+    margin-top: 40px ;
     font-weight: 600;
-    font-size: 13px;
+    font-size: 15px;
   }
 
 
@@ -768,4 +819,13 @@ html body footer .footer p {
     }
   }
   
+  header nav button {
+    border: none;
+    background-color: none !important;
+    font-size: 2.5rem;
+    color: white;
+  }
+
+
+
 }

@@ -11,7 +11,7 @@
   <body>
     <header id="header">
       <h1>
-        <a href="#home"><img  class="img-logo"  src="./src/img/WhatsApp Image 2024-08-18 at 01.18.06_d5d826d1.jpg" alt="Logo" /></a>
+        <a href="#home"><img  class="img-logo"  src="./src/img/Design sem nome.png" alt="Logo" /></a>
       </h1>
       <nav id="nav">
         <button
@@ -24,9 +24,9 @@
           ☰
         </button>
         <ul id="menu" role="menu">
-          <li><a href="#about">Sobre</a></li>
-          <li><a href="#account">Investimentos</a></li>
-          <li><a href="#contact">Contato</a></li>
+          <li><a onclick="changeMenu('click')" href="#about">Sobre</a></li>
+          <li><a onclick="changeMenu('click')" href="#account">Investimentos</a></li>
+          <li><a onclick="changeMenu('click')" href="#contact">Contato</a></li>
 
           <!-- <a href="https://homebroker-front.vercel.app/login">          <button class="btn" style="margin-right: 10px;">Cadastrar</button>
           </a>
@@ -88,6 +88,7 @@
       <section id="account" class="main-content account">
         <span>
           <img
+          class="cu"
             src="./src/img/digital.jpg"
             alt="Homem sentado a frente do computador com o celular na mão fazendo um 'ok'"
           />
@@ -110,17 +111,20 @@
             Conheça nossa plataforma
             </h1>
           <p>
-            Nosso home broker exclusivo permite que você compre ações de empresas emergentes antes mesmo delas irem para a bolsa de valores. Com a nossa plataforma, você adquire papéis a preços reduzidos e, ao serem lançados na bolsa, essas ações dobram de valor, garantindo um retorno potencial significativo. Todas as operações podem ser realizadas diretamente pelo seu celular ou computador, sem taxas de manutenção ou tarifas ocultas. Aproveite a oportunidade de investir antes do mercado e maximize seus ganhos!
+            Nosso home broker exclusivo permite que você
+             compre ações de empresas emergentes antes mesmo delas 
+             irem para a bolsa de valores. Com a nossa plataforma, você adquire papéis a preços reduzidos e, ao serem lançados na bolsa, essas ações dobram de valor, garantindo um retorno potencial significativo. Todas as operações podem ser realizadas diretamente pelo seu celular ou computador, sem taxas de manutenção ou tarifas ocultas. Aproveite a oportunidade de investir antes do mercado e maximize seus ganhos!
 
           </p>
 
           <a href="https://homebroker-front.vercel.app/homebroker"
-            >Saiba mais <img src="./src/img/seta-p.jpg" alt="Seta"
+            >Saiba mais <img  src="./src/img/seta-p.jpg" alt="Seta"
           /></a>
         </article>
 
         <span>
           <img
+          class="vsf"
             src="./src/img/cartao.jpg"
             alt="Mulher usando cartão de crédito"
           />
@@ -128,27 +132,31 @@
       </section>
 
       <section id="clients" class="main-content customer">
-        <h1>Depoimentos de nossos clientes</h1>
+        <h1 class="title" >Depoimentos de nossos clientes</h1>
         <div class="center">
           <div class="depo">
             <p>
-              "Estou muito satisfeita com o serviço desta plataforma de investimentos. Desde que comecei a utilizá-la, tudo foi feito de forma rápida e segura, sem complicações. A possibilidade de adquirir ações de empresas emergentes antes delas irem para a bolsa é um diferencial incrível. Recomendo!"
+              "Estou muito satisfeita com o serviço 
+              desta plataforma de investimentos. 
+              Desde que comecei a utilizá-la, tudo foi feito de forma 
+              rápida e segura, sem complicações. 
+              Recomendo!, Muito bom"
 
             </p>
             <div class="user">
               <img src="./src/img/dep1.jpg" alt="Foto de Perfil" />
-              <span>Usuária do Instagram</span>
+              <span>Juliana Peres</span>
             </div>
           </div>
 
           <div class="depo">
             <p>
-              "Fiquei surpresa com a facilidade de começar a investir na plataforma. O processo foi todo online, e em poucos minutos já estava apta a comprar ações. O site é muito intuitivo e fácil de usar, o que me ajuda a acompanhar o mercado e tomar decisões com confiança."
+              "Fiquei surpresa com a facilidade de começar a investir na plataforma. O processo foi todo online, e em poucos minutos já estava apta a comprar ações. O site é muito intuitivo e fácil de usar."
 
             </p>
             <div class="user">
               <img src="./src/img/dep2.jpg" alt="Foto de Perfil" />
-              <span>Usuária do Instagram</span>
+              <span>Julia Andrade</span>
             </div>
           </div>
 
@@ -159,7 +167,7 @@
             </p>
             <div class="user">
               <img src="./src/img/dep3.jpg" alt="Foto de Perfil" />
-              <span>Usuário do Instagram</span>
+              <span>Carlos Amoedo</span>
             </div>
           </div>
         </div>
