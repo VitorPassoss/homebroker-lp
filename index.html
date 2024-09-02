@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/styles/style.css" />
     <title>XFlorida Asset Market</title>
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <!-- Remix Icon -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet"
+/>
   </head>
 
   <body>
@@ -180,7 +184,7 @@
             Se você tiver alguma dúvida, sugestão ou precisar de assistência, nossa equipe está à disposição para ajudá-lo(a). Nosso objetivo é garantir a melhor experiência possível na compra antecipada de ações. Estamos disponíveis para atendê-lo(a) de segunda a sexta-feira, das 10h às 18h, e aos sábados, das 9h às 14h. Após o horário do pregão, você ainda pode realizar negociações de papéis pelo valor de fechamento, e estaremos prontos para auxiliá-lo(a) em qualquer momento.
 
           </p>
-          <div class="icon">
+          <!-- <div class="icon">
             <a href="https://www.instagram.com/" target="_blank"
               ><img src="./src/img/instagram.png" alt="Logo Instagram"
             /></a>
@@ -190,7 +194,7 @@
             <a href="https://www.linkedin.com/" target="_blank"
               ><img src="./src/img/linkedin.png" alt="Logo Linkedin"
             /></a>
-          </div>
+          </div> -->
         </article>
 
         <form onsubmit="limparCampo(event)" class="form">
@@ -225,7 +229,87 @@
           </fieldset>
         </form>
       </section>
+
+      <div class="container">
+        <div class="accordion__wrapper">
+            <h1 class="accordion__title">Perguntas Frequentes</h1>
+    
+            <!-- Accordion 1  -->
+            <div class="accordion">
+              <div class="accordion__header">
+                  <h2 class="accordion__question">Como funciona o saque?</h2>
+                  <span class="accordion__icon">
+                      <i id="accordion-icon" class="ri-add-line"></i>
+                  </span>
+              </div>
+              <div class="accordion__content">
+                  <p class="accordion__answer">
+                      O saldo depositado na plataforma é destinado exclusivamente à compra de ações. Essas ações podem ser negociadas antes do pregão e são transferidas para a bolsa de valores posteriormente. Após essa migração, o saldo só poderá ser utilizado para adquirir outras ações disponíveis na plataforma.
+                  </p>
+              </div>
+          </div>
+          
+          <!-- Accordion 2 -->
+          <div class="accordion">
+              <div class="accordion__header">
+                  <h2 class="accordion__question">Como posso começar a investir na XFlorida?</h2>
+                  <span class="accordion__icon">
+                      <i id="accordion-icon" class="ri-add-line"></i>
+                  </span>
+              </div>
+              <div class="accordion__content">
+                  <p class="accordion__answer">
+                      Para começar a investir na XFlorida, é simples: basta criar uma conta na plataforma, adicionar fundos e iniciar a compra de ações disponíveis. Aproveite a oportunidade para diversificar seu portfólio com os ativos que mais se adequam ao seu perfil de investidor.
+                  </p>
+              </div>
+          </div>
+          
+          <!-- Accordion 3 -->
+          <div class="accordion">
+              <div class="accordion__header">
+                  <h2 class="accordion__question">É seguro investir pela XFlorida?</h2>
+                  <span class="accordion__icon">
+                      <i id="accordion-icon" class="ri-add-line"></i>
+                  </span>
+              </div>
+              <div class="accordion__content">
+                  <p class="accordion__answer">
+                      Sim, investir pela XFlorida é seguro. Somos uma corretora autorizada e regulada pela Comissão de Valores Mobiliários (CVM), garantindo que todas as operações sejam conduzidas de acordo com as normas do mercado financeiro, proporcionando tranquilidade e segurança para nossos clientes.
+                  </p>
+              </div>
+          </div>
+          
+
+            <!-- Accordion 4 -->
+            <!-- <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">Is this accordion responsive?</h2>
+                    <span class="accordion__icon">
+                        <i id="accordion-icon" class="ri-add-line"></i>
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">Yes, this accordion is designed to be responsive and will adjust its layout based on the screen size to ensure a good user experience on both desktop and mobile devices.</p>
+                </div>
+            </div> -->
+    
+            <!-- Accordion 5 -->
+            <!-- <div class="accordion">
+                <div class="accordion__header">
+                    <h2 class="accordion__question">Can I use this accordion in my project?</h2>
+                    <span class="accordion__icon">
+                        <i id="accordion-icon" class="ri-add-line"></i>
+                    </span>
+                </div>
+                <div class="accordion__content">
+                    <p class="accordion__answer">Absolutely! Feel free to use this accordion in your projects. You can modify and adapt it as needed to fit your requirements.</p>
+                </div>
+            </div> -->
+        </div>
+    </div>
     </main>
+
+    
 
     <footer>
       <div class="footer">
